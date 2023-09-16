@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-1 col-lg-2"></div>
+            <div class="col-md-5 col-lg-4 d-none d-xxl-block align-items-center homeImageBG">
+                <img src="./images/screenshot1.png" alt="" class="iphonePhotoxxl" id="xxlSideShow">
+            </div>
+            <div class="col-md-5 col-lg-4 d-none d-xl-block d-xxl-none align-items-center homeImageBG">
+                <img src="./images/screenshot1.png" alt="" class="iphonePhotoxl" id="xlSideShow">
+            </div>
+            <div class="col-md-5 col-lg-4 d-none d-lg-block d-xl-none align-items-center homeImageBG"  >
+                <img src="./images/screenshot2.png" alt="" class="iphonePhotolg" id="lgSideShow">
+            </div>
+            <div class="col-md-5 col-lg-4 d-none d-md-block d-lg-none align-items-center homeImageBG">
+                <img src="./images/screenshot3.png" alt="" class="iphonePhotomd " id="mdSideShow">
+            </div>
+            <div class="col-md-5 col-lg-4 d-flex justify-content-center">
+                <div class="row container d-flex justify-content-center">
+                    <div class="w-100 ">
+                        <form action="./index.html" class="inputsForm my-1 border px-4" id="logForm" target="_self" method="post">
+                            <a href="" class="d-flex justify-content-center"><img src="./images/Logo-Instagram.png" alt="instagram logo" class="w-75 my-1"></a>
+                            <input type="text" name="mobileNumberorEmail" id="mobileNumberorEmail" placeholder="phone Number, username or Email" class="w-100 inputs">
+                            <div class="showpasswordDiv">
+                                <input type="password" name="password" id="password" placeholder="password" class="w-100 inputs mb-2 passwordInput">
+                                <span><i class="fa-solid fa-key showHidePW" style="color: #000000;" id="showHidePW"></i>
+                            </div>
+                            <input type="submit" value="Login" class="btn btn-primary regcol w-100 mt-4 mb-3" id="loginFormSubmit" disabled>
+                            <div class="errorMsg" id="errorMsg"><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> Please Enter a Valid Email and Password</div>
+                            <div class="d-flex justify-content-center">
+                                <div class="regLine"></div>
+                                <div class="regSecColor mx-4">OR</div>
+                                <div class="regLine"></div>
+                            </div>
+                            <button type="button" class="btn btn-link w-100 my-2 " style="text-decoration: none;">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Log in with Facebook</span>
+                            </button>
+                            <div class="w-100 my-2 d-flex justify-content-center">
+                                <a href="">Forget Password?</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row container border d-flex justify-content-center mt-2 py-3">
+                        <div class="w-75 text-center">
+                            Don't have an account? <a href="./register.html">Sign up</a>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="mx-auto mt-3 text-center">
+                            <div class="text-center my-3">Get the app.</div>
+                            <div class="d-flex flex-row flex-wrap justify-content-center">
+                                <div><a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D11BC9B5D-5BD1-498F-A497-5304378C79AC%26utm_campaign%3DsignupPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge&pli=1" target="_blank"><img src="./images/googleplsy.png" alt="Google Play" class="px-2" width="150px"></a></div>
+                                <div><a href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=0%2C0%2C2112%2C1133" target="_blank"><img src="./images/microsoft.png" alt="microsoft" class="px-2" width="126px"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

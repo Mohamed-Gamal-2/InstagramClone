@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body id="body">
+    <!-- Nav Bar in All screens -->
+    <!-- large and mid screens -->
+    <div class="navbarMine p-3 d-none d-md-flex flex-column justify-content-between" id="mdlgNav">
+        <ul class="nav flex-column">
+            <li class="nav-item"  id="Logo-Instagram-link">
+              <a href="./index.html"><img src="./images/Logo-Instagram.png" alt="" id="Logo-Instagram" class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold"></a>
+              <div class="d-none d-md-flex d-lg-none justify-content-center" id="Logo-Instagram-mid" > 
+                  <a href=""><i class="fa-brands fa-instagram fa-2x" id="instalogomdScreens" style="color: #000000;"></i></a>
+              </div>
+            </li>
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="./index.html"><i class="fa-solid fa-house me-2 navbarIcons" style="color: #000000;"></i><span class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold">Home</span></a>
+            </li>
+            <li class="nav-item mt-3" id="searchBtn">
+              <div class="nav-link"><i class="fa-solid fa-magnifying-glass me-2 navbarIcons" style="color: #000000;"></i><span class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold" id="lgExplore">Explore</span></div>
+            </li>
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="#"><i class="fa-solid fa-video me-2 navbarIcons" style="color: #000000;"></i><span class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold">Reels</span></a>
+            </li>
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="#"><i class="fa-brands fa-facebook-messenger me-2 navbarIcons" style="color: #000000;"></i><span class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold">Messeges</span></a>
+            </li>
+            <li class="nav-item mt-3" id="notifiBtn">
+                <div class="nav-link" href="#"><i class="fa-regular fa-heart me-2 navbarIcons" style="color: #000000;"></i><span class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold">Notifications</span></div>
+            </li>
+            <li class="nav-item mt-3">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="createPostBtn" >
+                    <div class="nav-link"><i class="fa-regular fa-square-plus me-2 navbarIcons" style="color: #000000;"></i><span class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold">Create</span></div>
+                </button>
+            </li>
+            <li class="nav-item mt-3" id="savedItem">
+                <div class="nav-link" href="#"><i class="fa-regular fa-bookmark me-2 navbarIcons" style="color: #000000;"></i><span class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold">Saved</span></div>
+            </li>
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="#"><img src="./images/Userimage.jpg" alt="" class="me-2 rounded-circle" width="24px" height="24px"><span class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold">Profile</span></a>
+            </li>
+        </ul>
+        <ul class="nav flex-column"></ul>
+        <div class="dropdown">
+                    <li class="nav-item moreNave p-2">
+                    <button class="dropbtn"><a class="nav-link" href="#"><i class="fa-solid fa-bars me-2 navbarIcons" style="color: #000000;"></i><span class="d-none d-lg-inline lgScreenNavSpans lgScreenNavSpanshold">More</span></a></button>
+                    <div class="dropdown-content">
+                      <a href="#"><i class="fa-solid fa-gear me-2" style="color: #000000;"></i><span>Settings</span></a>
+                      <a href="#"><i class="fa-regular fa-clock me-2" style="color: #000000;"></i><span>Your Activity</span></a>
+                      <a href="#"><i class="fa-regular fa-keyboard me-2" style="color: #000000;"></i><span>Keyboard Shortcuts</span></a>
+                      <a class="switchApp" id="switchApp"><i class="fa-regular fa-sun me-2" style="color: #000000;"></i><span>Switch Apperance</span></a>
+                      <a href="#"><i class="fa-regular fa-flag me-2" style="color: #000000;"></i><span>Report Problem</span></a>
+                      <a href="./login.html">Switch Accounts</a>
+                      <a href="./login.html">logout</a>
+                    </div>
+                </li>
+                  </div>
+        </ul>
+    </div>
+    <!-- Small Sceens -->
+    <div class="d-sm-flex d-md-none flex-nowrap smScreenNav p-2" id="smallUp">
+        <ul class="nav d-flex justify-content-around flex-nowrap w-100">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-house navbarIcons" style="color: #000000;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-video navbarIcons" style="color: #000000;"></i><span class="d-none d-lg-inline">Reels</span></a>
+            </li>
+            <li class="nav-item">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="createSm" >
+                    <a class="nav-link" href="#"><i class="fa-regular fa-square-plus navbarIcons" style="color: #000000;"></i></a>
+                </button>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-facebook-messenger navbarIcons" style="color: #000000;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="./images/Userimage.jpg" alt="" class=" rounded-circle" width="24px" height="24px"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-sm-flex d-md-none flex-nowrap smScreenNavtop p-2" id="smallDown">
+        <div class="d-flex justify-content-between flex-nowrap w-100">
+            <div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="./images/Logo-Instagram.png" width="100px" id="smScreenLogo" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-100">
+                <ul class="nav d-flex flex-nowrap">
+                    <li class="nav-item mt-3 w-100">
+                        <div class="input-group w-100 justify-content-end ">
+                            <input type="text" class="w-75 px-3 searchInput me-2" placeholder="Search"  id="smScreenSearch">
+                            <button type="button" class="btn bg-transparent" style="margin-left: -45px; z-index: 100;" id="clearsmScreenSearch">
+                              <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="searchingResult" id="searchingResultsm">
+                        </div>            
+                    </li>
+                    <li class="nav-item mt-3" id="notifiSmNavBar">
+                        <div class="nav-link" href="#"><i class="fa-regular fa-heart me-2 navbarIcons" style="color: #000000;"></i></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar attachment Large and medium-->
+    <!-- saved menu -->
+    <div class="position-fixed p-5">
+        <div class="p-5" id="savedMenu" style="display: none;">
+            <h2 class="mb-3">saved items</h2>
+            <div class="w-100"><hr></div>
+            <div class="savedItem" id="savedItems">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- search -->
+    <div class="position-fixed p-5">
+        <div class="p-5" id="navbarSearchAtt" style="display: none;">
+            <h2 class="mb-3">Search</h2>
+            <div class="input-group">
+                <input type="text" class="w-100 px-3 searchInput" placeholder="Search" id="lgScreenSearch">
+                <button type="button" class="btn bg-transparent" style="margin-left: -45px; z-index: 100;" id="clearLgScreenSearch">
+                  <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="w-100"><hr></div>
+            <div class="searchingResult" id="searchingResult">
+            </div>
+
+        </div>
+    </div>
+    <!-- notifi -->
+        <!-- large and medium -->
+    <div class="position-fixed">
+        <div class="p-4" id="navbarNotifiAtt" style="display: none;">
+            <h2 class="mb-3">Notifications</h2>
+
+        </div>
+    </div>
+        <!-- small -->
+    <div class="text-center">
+        <div id="navbarNotifism" style="display: none;">
+            <div><i class="fa-solid fa-caret-left fa-3x" style="color: #000000;" id="notifBackSmall"></i></div>
+            <h2 class="mb-3 pt-3">Notifications</h2><hr>
+
+        </div>
+    </div>
+    <!-- create posts -->
+        <!-- large and medium -->
+    <div class="createPost">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header position-relative">
+                        <div class="d-flex justify-content-between w-100">
+                            <h1 class="modal-title fs-5 me-5" id="exampleModalLabel">Create a new post</h1> 
+
+                        </div>
+                            
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btn-close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="dragArea overflow-hidden" id="dragArea">
+                            <div class="icon" id="DAD3">
+                                <i class="fa-solid fa-photo-film fa-5x py-5" style="color: #000000;"></i>
+                            </div>
+                            <div id="imgAdded" class="d-none align-items-center justify-content-center my-auto" style="max-width: 370px; max-height: 460px;">
+
+                            </div>
+                            <h4 class="mb-5" id="DAD">Drag photos and videos here</h2>
+                            <button type="button" class="btn btn-primary mb-4" id="DAD2">Select from Computer</button>
+                            <form action="" id="myForm">
+                                <input type="file" id="dropZoneInput"  hidden>
+                                <button class="postBtn ms-5 d-none position-absolute" id="postAnewPost">
+                                    post
+                                </button>
+                            </form>
+                        </div>
+                        <div id="captionDiv" class="d-none">
+                            <div class="mt-5 mb-1 text-start">
+                                Insert your Caption
+                            </div>
+                            <input type="text" id="postCaption" class="w-100 searchInput  mb-3" style="height: 30px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of nav bar attachment -->
+    <!-- posts -->
+    <main class="w-75 ms-auto mt-5">
+        <div class="row container-fluid rowStories">
+            <div class="col-sm-8 col-lg-6">
+                <div class="d-flex flex-nowrap align-items-center" id="storiesBox">
+                    <div class="leftArrow">
+                        <button class="leftArrowBtn" id="leftArrowBtn">
+                            <i class="fa-solid fa-circle-chevron-left" style="color: #bfbfbf;"></i>
+                        </button>
+                    </div>
+                    <div class="stories d-flex flex-nowrap pt-3" id="storiesContainer">
+                    </div>
+                    <div class="rightArrow">
+                        <button class="rightArrowBtn" id="rightArrowBtn">
+                            <i class="fa-solid fa-circle-chevron-right" style="color: #bfbfbf;"></i>
+                        </button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="row container postsContiner">
+            <div class="col-sm-8 col-lg-6" id="postsContiner">
+            </div>
+            <div class="d-none d-lg-block col-lg-6 pt-5" >
+                <div class="w-75 mx-auto d-flex justify-content-between mt-3 mb-5">
+                    <div style="color: #888888;">Suggested for you</div>
+                    <button class="seeAllAddContainer" id="seeAllBtn">See all</button>
+                </div>
+                <div id="addContainer" class="w-75 mx-auto">
+
+                </div> 
+            </div>
+        </div>
+        <div class="d-none seeAllPopup pt-5" id="seeAllPopup">
+        </div>
+
+
+<!-- stories -->
+
+        <div class="storiesPopContainer d-none justify-content-center align-items-center" id="storiesPopContainer">
+            <div class="leftStoryArrow" id="leftStoryArrow">
+                <i class="fa-solid fa-chevron-left fa-3x" style="color: #ffffff;"></i>
+            </div>
+            <div class="storyImages mx-4">
+                <img src="" alt="" style="max-height: 100vh;" id="storyIDImg">
+            </div>
+            <div class="rightStoryArrow" id="rightStoryArrow">
+                <i class="fa-solid fa-chevron-right fa-3x" style="color: #ffffff;"></i>
+            </div>
+            <div class="closeStory" id="closeStory">
+                <i class="fa-solid fa-xmark fa-3x" style="color: #000000;"></i>
+            </div>
+            <div class="userStoryPop" id="userStoryPop">
+
+            </div>
+        </div>
+    
+
+    </main>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
