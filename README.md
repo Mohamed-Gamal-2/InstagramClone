@@ -33,7 +33,7 @@ The website is built using the following technologies:
 - Bootstrap: Used as a CSS framework to provide a responsive and mobile-first design approach.
 
 ---
-## Screenshots
+## Preview
 
 ![Home-dark1](https://github.com/Mohamed-Gamal-2/InstagramClone/assets/141522329/647271af-5d6b-4fa9-a613-2c1716462103)
 ![Home-dark2](https://github.com/Mohamed-Gamal-2/InstagramClone/assets/141522329/96ba5785-8c42-413b-96bb-e5f464c4708e)
